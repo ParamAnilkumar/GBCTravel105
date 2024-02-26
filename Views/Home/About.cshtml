@@ -1,0 +1,98 @@
+﻿@{
+    // Fill in your information here
+    string groupName = "Group 105";
+    string[] studentNames = { "Param Patel", "Ankitha Ralla", "Rushil Tamakuwala" };
+    string[] studentIds = { "101411591", "101411810", "101413662" };
+    string[] imageUrls = { "~/images/Param.jpg", "~/images/Ankitha.jpg", "~/images/rushil.jpg" };
+    ViewData["Title"] = "Student Information";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    @* <div class="container">
+        <h1 class="text-center">@groupName</h1>
+        <hr>
+        <h2 class="text-center">Student Information</h2>
+        <div class="row">
+            @foreach (var i in Enumerable.Range(0, studentNames.Length))
+            {
+                <div class="col-md-6">
+                    <img src=@imageUrls  class="img-fluid mb-4" alt="@studentNames Image">
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@studentNames[i]</h5>
+                            <p class="card-text">Student ID: @studentIds[i]</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+ *@
+    <div class="container">
+        <h1 class="text-center">@groupName</h1>
+        <hr>
+        <h2 class="text-center">Student Information</h2>
+        <div class="row">
+            
+                <div class="col-md-6">
+                <img src="~/css/Param.jpg" class="img-fluid mb-4" alt="Param Image" height="200px" width="200px">
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Param Patel</h5>
+                            <p class="card-text">Student ID: 101411591</p>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-6">
+                <img src="~/css/Ankitha.jpg" class="img-fluid mb-4" alt="Ankitha Image" height="200px" width="200px">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ankitha Ralla</h5>
+                        <p class="card-text">Student ID: 101411810</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="~/css/Rushil.jpg" class="img-fluid mb-4" alt="Rushil Image" height="200px" width="200px">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Rushil Tamakuwala</h5>
+                        <p class="card-text">Student ID: 101413662</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
