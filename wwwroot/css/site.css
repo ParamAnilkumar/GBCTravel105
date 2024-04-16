@@ -1,25 +1,38 @@
-/* Global styles */
+// Global styles
+$body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$body-line-height: 1.6;
+$body-background-color: #f8f9fa;
+$body-color: #333;
+$body-scroll-behavior: smooth;
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-    scroll-behavior: smooth;
+    font-family: $body-font-family;
+    line-height: $body-line-height;
+    background-color: $body-background-color;
+    color: $body-color;
+    scroll-behavior: $body-scroll-behavior;
 }
 
 .container {
     margin-top: 20px;
 }
 
-/* Navbar styles */
+// Navbar styles
+$navbar-background-color: #343a40;
+$navbar-border-color: #222;
+$navbar-brand-color: #fff;
+$navbar-link-color: #fff;
+$navbar-link-hover-color: #fff;
+$navbar-link-hover-background-color: #495057;
+
 .navbar {
-    background-color: #343a40;
-    border-bottom: 1px solid #222;
+    background-color: $navbar-background-color;
+    border-bottom: 1px solid $navbar-border-color;
 }
 
 .navbar-brand {
     font-weight: bold;
-    color: #fff;
+    color: $navbar-brand-color;
 }
 
 .navbar-toggler {
@@ -31,22 +44,31 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: $navbar-link-color;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-item:hover {
-    background-color: #495057;
+    background-color: $navbar-link-hover-background-color;
 }
 
     .navbar-nav .nav-item:hover .nav-link {
-        color: #fff;
+        color: $navbar-link-hover-color;
     }
 
-/* Main content styles */
+// Main content styles
 .main-content {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover,
+// Hover styles for headings
+h1, h2, h3, h4, h5 {
+    transition: color 0.3s ease;
+    &:hover
+
+{
+    color: #f00;
+    // Add your hover styles for headings here
+}
+}

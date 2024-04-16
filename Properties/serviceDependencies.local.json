@@ -1,8 +1,18 @@
 {
   "dependencies": {
     "mssql1": {
-      "type": "mssql.local",
-      "connectionId": "ConnectionStrings:GBCTravel105Context"
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:MyRemoteTravelDatabase"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql3": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/aspfinal105/databases/FinalTravelDatabase",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:aspFinalConnectionString"
     }
   }
 }

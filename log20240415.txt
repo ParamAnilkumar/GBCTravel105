@@ -1,0 +1,620 @@
+2024-04-15 21:59:16.570 -04:00 [INF] User profile is available. Using 'C:\Users\param\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-15 21:59:17.084 -04:00 [WRN] No store type was specified for the decimal property 'DailyRate' on entity type 'Car'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 21:59:17.085 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Flight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 21:59:18.331 -04:00 [INF] Executed DbCommand (25ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 21:59:18.373 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 21:59:18.375 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 21:59:18.421 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-15 21:59:18.529 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-15 21:59:18.530 -04:00 [INF] Hosting environment: Development
+2024-04-15 21:59:18.530 -04:00 [INF] Content root path: C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105
+2024-04-15 21:59:18.548 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 21:59:19.170 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-15 21:59:19.174 -04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-15 21:59:19.183 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 302 null null 636.1873ms
+2024-04-15 21:59:19.185 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - null null
+2024-04-15 21:59:19.191 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 21:59:19.211 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 21:59:19.225 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 21:59:19.229 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 21:59:19.230 -04:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-04-15 21:59:19.231 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 21:59:19.231 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 21:59:19.313 -04:00 [INF] Executed page /Account/Login in 100.0842ms
+2024-04-15 21:59:19.313 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 21:59:19.315 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 130.2769ms
+2024-04-15 21:59:19.334 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:19.335 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/GBCTravel105.styles.css?v=UkhmKmdhipT8hZnbIC3fHvKfNezmEvzFOjQRNskDVbk - null null
+2024-04-15 21:59:19.335 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/css/site.css?v=gCQPJnRKuWKqsHY96AlMaorZxsEk5zMa089o8RkWPpM - null null
+2024-04-15 21:59:19.335 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-04-15 21:59:19.335 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/js/site.js?v=iiwRdojmNEcItcTFzpg2wTTfROEFbzHxkSlKz4hkgtw - null null
+2024-04-15 21:59:19.335 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-04-15 21:59:19.336 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/lib/jquery/dist/jquery.min.js - null null
+2024-04-15 21:59:19.336 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:19.336 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 1.9553ms
+2024-04-15 21:59:19.338 -04:00 [INF] The file /css/site.css was not modified
+2024-04-15 21:59:19.338 -04:00 [INF] The file /js/site.js was not modified
+2024-04-15 21:59:19.338 -04:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2024-04-15 21:59:19.338 -04:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2024-04-15 21:59:19.338 -04:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2024-04-15 21:59:19.338 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/lib/jquery/dist/jquery.min.js - 304 null text/javascript 2.4562ms
+2024-04-15 21:59:19.338 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 2.7767ms
+2024-04-15 21:59:19.338 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 3.3509ms
+2024-04-15 21:59:19.338 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/css/site.css?v=gCQPJnRKuWKqsHY96AlMaorZxsEk5zMa089o8RkWPpM - 304 null text/css 3.5935ms
+2024-04-15 21:59:19.338 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/js/site.js?v=iiwRdojmNEcItcTFzpg2wTTfROEFbzHxkSlKz4hkgtw - 304 null text/javascript 2.9638ms
+2024-04-15 21:59:19.343 -04:00 [INF] Sending file. Request path: '/GBCTravel105.styles.css'. Physical path: 'C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105\obj\Debug\net8.0\scopedcss\bundle\GBCTravel105.styles.css'
+2024-04-15 21:59:19.344 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/GBCTravel105.styles.css?v=UkhmKmdhipT8hZnbIC3fHvKfNezmEvzFOjQRNskDVbk - 200 1252 text/css 9.5187ms
+2024-04-15 21:59:19.378 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.4085ms
+2024-04-15 21:59:34.968 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 263
+2024-04-15 21:59:34.973 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 21:59:34.974 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 21:59:34.997 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-04-15 21:59:35.013 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-15 21:59:35.099 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-04-15 21:59:35.116 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-04-15 21:59:35.118 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 21:59:35.123 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-04-15 21:59:35.126 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-04-15 21:59:35.127 -04:00 [INF] User logged in.
+2024-04-15 21:59:35.129 -04:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-04-15 21:59:35.130 -04:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2024-04-15 21:59:35.131 -04:00 [INF] Executed page /Account/Login in 156.8049ms
+2024-04-15 21:59:35.131 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 21:59:35.133 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - 302 null null 164.423ms
+2024-04-15 21:59:35.133 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 21:59:35.138 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 21:59:35.141 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 21:59:35.144 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 21:59:35.153 -04:00 [INF] Executed ViewResult - view Index executed in 10.0953ms.
+2024-04-15 21:59:35.153 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 11.8316ms
+2024-04-15 21:59:35.154 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 21:59:35.154 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 20.3175ms
+2024-04-15 21:59:35.186 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:35.186 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:35.187 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.7193ms
+2024-04-15 21:59:35.192 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.2815ms
+2024-04-15 21:59:38.205 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Manage - null null
+2024-04-15 21:59:38.208 -04:00 [INF] Executing endpoint '/Account/Manage/Index'
+2024-04-15 21:59:38.212 -04:00 [INF] Route matched with {page = "/Account/Manage/Index", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Index
+2024-04-15 21:59:38.214 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.Manage.IndexModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 21:59:38.231 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-04-15 21:59:38.233 -04:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 21:59:38.250 -04:00 [INF] Executed page /Account/Manage/Index in 38.136ms
+2024-04-15 21:59:38.251 -04:00 [INF] Executed endpoint '/Account/Manage/Index'
+2024-04-15 21:59:38.251 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Manage - 200 null text/html; charset=utf-8 45.4661ms
+2024-04-15 21:59:38.267 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:38.267 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:38.268 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6347ms
+2024-04-15 21:59:38.274 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8225ms
+2024-04-15 21:59:39.129 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Manage/Email - null null
+2024-04-15 21:59:39.132 -04:00 [INF] Executing endpoint '/Account/Manage/Email'
+2024-04-15 21:59:39.136 -04:00 [INF] Route matched with {page = "/Account/Manage/Email", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Email
+2024-04-15 21:59:39.136 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.Manage.EmailModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 21:59:39.139 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-04-15 21:59:39.141 -04:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 21:59:39.152 -04:00 [INF] Executed page /Account/Manage/Email in 16.078ms
+2024-04-15 21:59:39.152 -04:00 [INF] Executed endpoint '/Account/Manage/Email'
+2024-04-15 21:59:39.152 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Manage/Email - 200 null text/html; charset=utf-8 23.0721ms
+2024-04-15 21:59:39.168 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:39.168 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:39.169 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6019ms
+2024-04-15 21:59:39.173 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5454ms
+2024-04-15 21:59:40.365 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Manage/ChangePassword - null null
+2024-04-15 21:59:40.368 -04:00 [INF] Executing endpoint '/Account/Manage/ChangePassword'
+2024-04-15 21:59:40.371 -04:00 [INF] Route matched with {page = "/Account/Manage/ChangePassword", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/ChangePassword
+2024-04-15 21:59:40.372 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 21:59:40.374 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-04-15 21:59:40.375 -04:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 21:59:40.385 -04:00 [INF] Executed page /Account/Manage/ChangePassword in 13.5077ms
+2024-04-15 21:59:40.385 -04:00 [INF] Executed endpoint '/Account/Manage/ChangePassword'
+2024-04-15 21:59:40.385 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Manage/ChangePassword - 200 null text/html; charset=utf-8 20.4466ms
+2024-04-15 21:59:40.405 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:40.405 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:40.405 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5651ms
+2024-04-15 21:59:40.409 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.3545ms
+2024-04-15 21:59:41.570 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 21:59:41.572 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 21:59:41.572 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 21:59:41.573 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 21:59:41.574 -04:00 [INF] Executed ViewResult - view Index executed in 1.0892ms.
+2024-04-15 21:59:41.574 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 1.5028ms
+2024-04-15 21:59:41.574 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 21:59:41.574 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 3.7316ms
+2024-04-15 21:59:41.590 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:41.590 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:41.590 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5793ms
+2024-04-15 21:59:41.594 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.3887ms
+2024-04-15 21:59:59.917 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/BookingManagement/userView/viewHotels - null null
+2024-04-15 21:59:59.918 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105)'
+2024-04-15 21:59:59.921 -04:00 [INF] Route matched with {area = "BookingManagement", action = "viewHotels", controller = "userView", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] viewHotels() on controller GBCTravel105.Areas.BookingManagement.Controllers.userView (GBCTravel105).
+2024-04-15 21:59:59.930 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[ImageUrl], [h].[Location], [h].[Name], [h].[PricePerNight], [h].[RoomNumber], [h].[status]
+FROM [Hotel] AS [h]
+2024-04-15 21:59:59.941 -04:00 [INF] Executing ViewResult, running view viewHotels.
+2024-04-15 21:59:59.949 -04:00 [INF] Executed ViewResult - view viewHotels executed in 7.9215ms.
+2024-04-15 21:59:59.949 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105) in 27.1763ms
+2024-04-15 21:59:59.949 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105)'
+2024-04-15 21:59:59.949 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/BookingManagement/userView/viewHotels - 200 null text/html; charset=utf-8 32.4469ms
+2024-04-15 21:59:59.968 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 21:59:59.968 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 21:59:59.969 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5314ms
+2024-04-15 21:59:59.973 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.7373ms
+2024-04-15 22:00:30.454 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/Admin - null null
+2024-04-15 22:00:30.457 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Admin (GBCTravel105)'
+2024-04-15 22:00:30.458 -04:00 [INF] Route matched with {action = "Admin", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Admin() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:00:30.459 -04:00 [INF] Executing ViewResult, running view Admin.
+2024-04-15 22:00:30.462 -04:00 [INF] Executed ViewResult - view Admin executed in 4.0871ms.
+2024-04-15 22:00:30.462 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Admin (GBCTravel105) in 4.3789ms
+2024-04-15 22:00:30.462 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Admin (GBCTravel105)'
+2024-04-15 22:00:30.463 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/Admin - 200 null text/html; charset=utf-8 8.4529ms
+2024-04-15 22:00:30.484 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:00:30.485 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5224ms
+2024-04-15 22:00:30.485 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/hotel-image.jpg - null null
+2024-04-15 22:00:30.485 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/flight-image.jpg - null null
+2024-04-15 22:00:30.486 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/car-image.jpg - null null
+2024-04-15 22:00:30.487 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:00:30.489 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/flight-image.jpg - 404 null null 3.1776ms
+2024-04-15 22:00:30.489 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/car-image.jpg - 404 null null 3.0922ms
+2024-04-15 22:00:30.489 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/hotel-image.jpg - 404 null null 3.4672ms
+2024-04-15 22:00:30.489 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/hotel-image.jpg, Response status code: 404
+2024-04-15 22:00:30.489 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/flight-image.jpg, Response status code: 404
+2024-04-15 22:00:30.489 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/car-image.jpg, Response status code: 404
+2024-04-15 22:00:30.491 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.7031ms
+2024-04-15 22:00:30.500 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/favicon.ico - null null
+2024-04-15 22:00:30.503 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105\wwwroot\favicon.ico'
+2024-04-15 22:00:30.503 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/favicon.ico - 499 5430 image/x-icon 3.2935ms
+2024-04-15 22:00:31.462 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/BookingManagement/Flights/Index - null null
+2024-04-15 22:00:31.464 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.FlightsController.Index (GBCTravel105)'
+2024-04-15 22:00:31.466 -04:00 [INF] Route matched with {area = "BookingManagement", action = "Index", controller = "Flights", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GBCTravel105.Areas.BookingManagement.Controllers.FlightsController (GBCTravel105).
+2024-04-15 22:00:31.474 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Airline], [f].[ArrivalTime], [f].[DepartureTime], [f].[Destination], [f].[Origin], [f].[Price]
+FROM [Flight] AS [f]
+2024-04-15 22:00:31.485 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:00:31.495 -04:00 [INF] Executed ViewResult - view Index executed in 10.2078ms.
+2024-04-15 22:00:31.495 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.FlightsController.Index (GBCTravel105) in 28.4749ms
+2024-04-15 22:00:31.495 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.FlightsController.Index (GBCTravel105)'
+2024-04-15 22:00:31.495 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/BookingManagement/Flights/Index - 200 null text/html; charset=utf-8 33.0889ms
+2024-04-15 22:00:31.514 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:00:31.514 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:00:31.514 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6656ms
+2024-04-15 22:00:31.519 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1541ms
+2024-04-15 22:00:37.362 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Logout?returnUrl=%2F - null null
+2024-04-15 22:00:37.364 -04:00 [INF] Executing endpoint '/Account/Logout'
+2024-04-15 22:00:37.366 -04:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2024-04-15 22:00:37.366 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 22:00:37.366 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:00:37.369 -04:00 [INF] Executed page /Account/Logout in 3.4616ms
+2024-04-15 22:00:37.369 -04:00 [INF] Executed endpoint '/Account/Logout'
+2024-04-15 22:00:37.369 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Logout?returnUrl=%2F - 200 null text/html; charset=utf-8 7.4017ms
+2024-04-15 22:00:37.387 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:00:37.387 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:00:37.388 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6235ms
+2024-04-15 22:00:37.391 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.1798ms
+2024-04-15 22:00:38.491 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44378/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F - application/x-www-form-urlencoded 225
+2024-04-15 22:00:38.493 -04:00 [INF] Executing endpoint '/Account/Logout'
+2024-04-15 22:00:38.493 -04:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2024-04-15 22:00:38.494 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2024-04-15 22:00:38.495 -04:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-04-15 22:00:38.495 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 22:00:38.496 -04:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-04-15 22:00:38.496 -04:00 [INF] User logged out.
+2024-04-15 22:00:38.496 -04:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-04-15 22:00:38.496 -04:00 [INF] Executing LocalRedirectResult, redirecting to /?page=%2F.
+2024-04-15 22:00:38.496 -04:00 [INF] Executed page /Account/Logout in 3.1862ms
+2024-04-15 22:00:38.496 -04:00 [INF] Executed endpoint '/Account/Logout'
+2024-04-15 22:00:38.497 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44378/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F - 302 null null 5.3562ms
+2024-04-15 22:00:38.499 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/?page=%2F - null null
+2024-04-15 22:00:38.500 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-15 22:00:38.500 -04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-15 22:00:38.500 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/?page=%2F - 302 null null 1.4113ms
+2024-04-15 22:00:38.502 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252F - null null
+2024-04-15 22:00:38.503 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:00:38.503 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:00:38.503 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 22:00:38.503 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 22:00:38.503 -04:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-04-15 22:00:38.503 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 22:00:38.503 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:00:38.505 -04:00 [INF] Executed page /Account/Login in 2.6866ms
+2024-04-15 22:00:38.505 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:00:38.506 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252F - 200 null text/html; charset=utf-8 3.7844ms
+2024-04-15 22:00:38.528 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:00:38.528 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:00:38.529 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.7146ms
+2024-04-15 22:00:38.533 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.4914ms
+2024-04-15 22:03:23.760 -04:00 [INF] User profile is available. Using 'C:\Users\param\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-15 22:03:24.227 -04:00 [WRN] No store type was specified for the decimal property 'DailyRate' on entity type 'Car'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:03:24.227 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Flight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:03:24.612 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:03:24.654 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:03:24.655 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:03:24.700 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-15 22:03:24.763 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-15 22:03:24.764 -04:00 [INF] Hosting environment: Development
+2024-04-15 22:03:24.764 -04:00 [INF] Content root path: C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105
+2024-04-15 22:03:24.771 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 22:03:24.835 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-15 22:03:24.837 -04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-15 22:03:24.844 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 302 null null 73.6518ms
+2024-04-15 22:03:24.846 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - null null
+2024-04-15 22:03:24.852 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:03:24.865 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:03:24.876 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 22:03:24.880 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 22:03:24.881 -04:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-04-15 22:03:24.882 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 22:03:24.883 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:03:24.956 -04:00 [INF] Executed page /Account/Login in 89.0153ms
+2024-04-15 22:03:24.957 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:03:24.958 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 112.1162ms
+2024-04-15 22:03:24.970 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:24.971 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 1.8294ms
+2024-04-15 22:03:24.978 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:24.997 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.5068ms
+2024-04-15 22:03:27.830 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/Admin - null null
+2024-04-15 22:03:27.835 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-04-15 22:03:27.835 -04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-15 22:03:27.836 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/Admin - 302 null null 5.2339ms
+2024-04-15 22:03:27.841 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2FHome%2FAdmin - null null
+2024-04-15 22:03:27.844 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:03:27.845 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:03:27.852 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 22:03:27.853 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 22:03:27.853 -04:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-04-15 22:03:27.853 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 22:03:27.853 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:03:27.858 -04:00 [INF] Executed page /Account/Login in 13.3301ms
+2024-04-15 22:03:27.858 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:03:27.859 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Login?ReturnUrl=%2FHome%2FAdmin - 200 null text/html; charset=utf-8 17.5793ms
+2024-04-15 22:03:27.880 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:27.880 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:27.881 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 1.0275ms
+2024-04-15 22:03:27.889 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.2891ms
+2024-04-15 22:03:30.968 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44378/Identity/Account/Login?ReturnUrl=%2FHome%2FAdmin - application/x-www-form-urlencoded 274
+2024-04-15 22:03:30.970 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:03:30.971 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:03:30.985 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-04-15 22:03:31.005 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-15 22:03:31.007 -04:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:03:31.012 -04:00 [INF] Executed page /Account/Login in 40.7271ms
+2024-04-15 22:03:31.013 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:03:31.016 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44378/Identity/Account/Login?ReturnUrl=%2FHome%2FAdmin - 200 null text/html; charset=utf-8 47.3544ms
+2024-04-15 22:03:31.032 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:31.032 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:31.032 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6753ms
+2024-04-15 22:03:31.038 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.2346ms
+2024-04-15 22:03:31.047 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/favicon.ico - null null
+2024-04-15 22:03:31.053 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105\wwwroot\favicon.ico'
+2024-04-15 22:03:31.053 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/favicon.ico - 499 5430 image/x-icon 5.4314ms
+2024-04-15 22:03:35.777 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Identity/Account/Login - null null
+2024-04-15 22:03:35.779 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:03:35.779 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:03:35.779 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-04-15 22:03:35.780 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-15 22:03:35.780 -04:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-04-15 22:03:35.780 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-04-15 22:03:35.780 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-04-15 22:03:35.782 -04:00 [INF] Executed page /Account/Login in 2.7349ms
+2024-04-15 22:03:35.782 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:03:35.782 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Identity/Account/Login - 200 null text/html; charset=utf-8 4.8429ms
+2024-04-15 22:03:35.802 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:35.802 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:35.803 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.6433ms
+2024-04-15 22:03:35.808 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.5546ms
+2024-04-15 22:03:47.960 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44378/Identity/Account/Login - application/x-www-form-urlencoded 263
+2024-04-15 22:03:47.962 -04:00 [INF] Executing endpoint '/Account/Login'
+2024-04-15 22:03:47.962 -04:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-04-15 22:03:47.963 -04:00 [INF] Executing handler method GBCTravel105.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-04-15 22:03:47.965 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-15 22:03:48.050 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-04-15 22:03:48.067 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-04-15 22:03:48.069 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:03:48.076 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-04-15 22:03:48.078 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-04-15 22:03:48.079 -04:00 [INF] User logged in.
+2024-04-15 22:03:48.079 -04:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-04-15 22:03:48.080 -04:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2024-04-15 22:03:48.080 -04:00 [INF] Executed page /Account/Login in 117.9131ms
+2024-04-15 22:03:48.080 -04:00 [INF] Executed endpoint '/Account/Login'
+2024-04-15 22:03:48.081 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44378/Identity/Account/Login - 302 null null 120.2824ms
+2024-04-15 22:03:48.082 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 22:03:48.086 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:03:48.091 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:03:48.093 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:03:48.100 -04:00 [INF] Executed ViewResult - view Index executed in 7.6836ms.
+2024-04-15 22:03:48.100 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 9.0845ms
+2024-04-15 22:03:48.100 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:03:48.101 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 18.1444ms
+2024-04-15 22:03:48.131 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:48.131 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:48.132 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.7185ms
+2024-04-15 22:03:48.136 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.4218ms
+2024-04-15 22:03:48.143 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/favicon.ico - null null
+2024-04-15 22:03:48.145 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105\wwwroot\favicon.ico'
+2024-04-15 22:03:48.146 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/favicon.ico - 499 5430 image/x-icon 2.5755ms
+2024-04-15 22:03:52.410 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 22:03:52.413 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:03:52.413 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:03:52.414 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:03:52.415 -04:00 [INF] Executed ViewResult - view Index executed in 1.151ms.
+2024-04-15 22:03:52.415 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 1.5518ms
+2024-04-15 22:03:52.415 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:03:52.415 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 5.0806ms
+2024-04-15 22:03:52.428 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:52.428 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:52.429 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5678ms
+2024-04-15 22:03:52.433 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.407ms
+2024-04-15 22:03:52.952 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/Privacy - null null
+2024-04-15 22:03:52.955 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Privacy (GBCTravel105)'
+2024-04-15 22:03:52.956 -04:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:03:52.957 -04:00 [INF] Executing ViewResult, running view Privacy.
+2024-04-15 22:03:52.960 -04:00 [INF] Executed ViewResult - view Privacy executed in 2.8663ms.
+2024-04-15 22:03:52.960 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Privacy (GBCTravel105) in 3.1582ms
+2024-04-15 22:03:52.960 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Privacy (GBCTravel105)'
+2024-04-15 22:03:52.960 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/Privacy - 200 null text/html; charset=utf-8 7.9834ms
+2024-04-15 22:03:52.975 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:52.975 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:52.976 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5597ms
+2024-04-15 22:03:52.980 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5828ms
+2024-04-15 22:03:53.632 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/BookingManagement/Bookings/Index - null null
+2024-04-15 22:03:53.633 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.BookingsController.Index (GBCTravel105)'
+2024-04-15 22:03:53.636 -04:00 [INF] Route matched with {area = "BookingManagement", action = "Index", controller = "Bookings", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GBCTravel105.Areas.BookingManagement.Controllers.BookingsController (GBCTravel105).
+2024-04-15 22:03:53.644 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookingDate], [b].[bookingtype], [b].[price]
+FROM [Booking] AS [b]
+2024-04-15 22:03:53.655 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:03:53.673 -04:00 [INF] Executed ViewResult - view Index executed in 19.0481ms.
+2024-04-15 22:03:53.674 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.BookingsController.Index (GBCTravel105) in 37.3292ms
+2024-04-15 22:03:53.674 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.BookingsController.Index (GBCTravel105)'
+2024-04-15 22:03:53.674 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/BookingManagement/Bookings/Index - 200 null text/html; charset=utf-8 42.2456ms
+2024-04-15 22:03:53.689 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:53.689 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:53.690 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5972ms
+2024-04-15 22:03:53.693 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.4974ms
+2024-04-15 22:03:56.713 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/Admin - null null
+2024-04-15 22:03:56.715 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Admin (GBCTravel105)'
+2024-04-15 22:03:56.716 -04:00 [INF] Route matched with {action = "Admin", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Admin() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:03:56.717 -04:00 [INF] Executing ViewResult, running view Admin.
+2024-04-15 22:03:56.721 -04:00 [INF] Executed ViewResult - view Admin executed in 4.3243ms.
+2024-04-15 22:03:56.721 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Admin (GBCTravel105) in 4.7913ms
+2024-04-15 22:03:56.721 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Admin (GBCTravel105)'
+2024-04-15 22:03:56.721 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/Admin - 200 null text/html; charset=utf-8 8.055ms
+2024-04-15 22:03:56.736 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:56.736 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:56.736 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/hotel-image.jpg - null null
+2024-04-15 22:03:56.736 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.537ms
+2024-04-15 22:03:56.739 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/hotel-image.jpg - 404 null null 2.8579ms
+2024-04-15 22:03:56.739 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/flight-image.jpg - null null
+2024-04-15 22:03:56.739 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/car-image.jpg - null null
+2024-04-15 22:03:56.739 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/hotel-image.jpg, Response status code: 404
+2024-04-15 22:03:56.740 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/flight-image.jpg - 404 null null 1.1284ms
+2024-04-15 22:03:56.740 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/car-image.jpg - 404 null null 1.1275ms
+2024-04-15 22:03:56.741 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/flight-image.jpg, Response status code: 404
+2024-04-15 22:03:56.741 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44378/Home/car-image.jpg, Response status code: 404
+2024-04-15 22:03:56.741 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.3469ms
+2024-04-15 22:03:58.562 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/Home/About - null null
+2024-04-15 22:03:58.563 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.About (GBCTravel105)'
+2024-04-15 22:03:58.564 -04:00 [INF] Route matched with {action = "About", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult About() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:03:58.565 -04:00 [INF] Executing ViewResult, running view About.
+2024-04-15 22:03:58.569 -04:00 [INF] Executed ViewResult - view About executed in 4.5997ms.
+2024-04-15 22:03:58.569 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.About (GBCTravel105) in 4.8335ms
+2024-04-15 22:03:58.569 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.About (GBCTravel105)'
+2024-04-15 22:03:58.569 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/Home/About - 200 null text/html; charset=utf-8 7.8887ms
+2024-04-15 22:03:58.584 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:03:58.584 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:03:58.584 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5694ms
+2024-04-15 22:03:58.589 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.9251ms
+2024-04-15 22:03:58.615 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/favicon.ico - null null
+2024-04-15 22:03:58.617 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105\wwwroot\favicon.ico'
+2024-04-15 22:03:58.617 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/favicon.ico - 499 5430 image/x-icon 2.7911ms
+2024-04-15 22:04:01.463 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 22:04:01.466 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:04:01.466 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:04:01.466 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:04:01.467 -04:00 [INF] Executed ViewResult - view Index executed in 1.1945ms.
+2024-04-15 22:04:01.467 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 1.3372ms
+2024-04-15 22:04:01.467 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:04:01.467 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 3.8808ms
+2024-04-15 22:04:01.483 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:04:01.483 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:04:01.484 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5431ms
+2024-04-15 22:04:01.488 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.5818ms
+2024-04-15 22:04:02.245 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/BookingManagement/userView/viewHotels - null null
+2024-04-15 22:04:02.248 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105)'
+2024-04-15 22:04:02.250 -04:00 [INF] Route matched with {area = "BookingManagement", action = "viewHotels", controller = "userView", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] viewHotels() on controller GBCTravel105.Areas.BookingManagement.Controllers.userView (GBCTravel105).
+2024-04-15 22:04:02.256 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[ImageUrl], [h].[Location], [h].[Name], [h].[PricePerNight], [h].[RoomNumber], [h].[status]
+FROM [Hotel] AS [h]
+2024-04-15 22:04:02.265 -04:00 [INF] Executing ViewResult, running view viewHotels.
+2024-04-15 22:04:02.270 -04:00 [INF] Executed ViewResult - view viewHotels executed in 5.418ms.
+2024-04-15 22:04:02.270 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105) in 20.4558ms
+2024-04-15 22:04:02.270 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.viewHotels (GBCTravel105)'
+2024-04-15 22:04:02.271 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/BookingManagement/userView/viewHotels - 200 null text/html; charset=utf-8 25.2159ms
+2024-04-15 22:04:02.284 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:04:02.284 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:04:02.284 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.507ms
+2024-04-15 22:04:02.289 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.8676ms
+2024-04-15 22:04:04.366 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/BookingManagement/userView/hotelDetails?id=4 - null null
+2024-04-15 22:04:04.369 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.hotelDetails (GBCTravel105)'
+2024-04-15 22:04:04.372 -04:00 [INF] Route matched with {area = "BookingManagement", action = "hotelDetails", controller = "userView", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] hotelDetails(System.Nullable`1[System.Int32]) on controller GBCTravel105.Areas.BookingManagement.Controllers.userView (GBCTravel105).
+2024-04-15 22:04:04.378 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[ImageUrl], [h].[Location], [h].[Name], [h].[PricePerNight], [h].[RoomNumber], [h].[status]
+FROM [Hotel] AS [h]
+WHERE [h].[Id] = @__id_0
+2024-04-15 22:04:04.380 -04:00 [INF] Executing ViewResult, running view hotelDetails.
+2024-04-15 22:04:04.390 -04:00 [INF] Executed ViewResult - view hotelDetails executed in 11.3211ms.
+2024-04-15 22:04:04.390 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.userView.hotelDetails (GBCTravel105) in 18.4951ms
+2024-04-15 22:04:04.390 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.userView.hotelDetails (GBCTravel105)'
+2024-04-15 22:04:04.391 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/BookingManagement/userView/hotelDetails?id=4 - 200 null text/html; charset=utf-8 24.8834ms
+2024-04-15 22:04:04.402 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:04:04.402 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:04:04.403 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5859ms
+2024-04-15 22:04:04.407 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.3464ms
+2024-04-15 22:04:07.951 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44378/BookingManagement/Hotel/hotelBooking?id=4%20method%3D - application/x-www-form-urlencoded 230
+2024-04-15 22:04:07.953 -04:00 [INF] Executing endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.HotelController.hotelBooking (GBCTravel105)'
+2024-04-15 22:04:07.956 -04:00 [INF] Route matched with {area = "BookingManagement", action = "hotelBooking", controller = "Hotel", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] hotelBooking(Int32) on controller GBCTravel105.Areas.BookingManagement.Controllers.HotelController (GBCTravel105).
+2024-04-15 22:04:07.971 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[ImageUrl], [h].[Location], [h].[Name], [h].[PricePerNight], [h].[RoomNumber], [h].[status]
+FROM [Hotel] AS [h]
+WHERE [h].[Id] = @__p_0
+2024-04-15 22:04:08.036 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 4000), @p2='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Booking] ([BookingDate], [bookingtype], [price])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-04-15 22:04:08.050 -04:00 [INF] Executing ViewResult, running view hotelBooking.
+2024-04-15 22:04:08.055 -04:00 [INF] Executed ViewResult - view hotelBooking executed in 5.3119ms.
+2024-04-15 22:04:08.055 -04:00 [INF] Executed action GBCTravel105.Areas.BookingManagement.Controllers.HotelController.hotelBooking (GBCTravel105) in 98.6073ms
+2024-04-15 22:04:08.055 -04:00 [INF] Executed endpoint 'GBCTravel105.Areas.BookingManagement.Controllers.HotelController.hotelBooking (GBCTravel105)'
+2024-04-15 22:04:08.055 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44378/BookingManagement/Hotel/hotelBooking?id=4%20method%3D - 200 null text/html; charset=utf-8 104.1493ms
+2024-04-15 22:04:08.066 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:04:08.066 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:04:08.066 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 0.5372ms
+2024-04-15 22:04:08.070 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.6457ms
+2024-04-15 22:05:13.061 -04:00 [INF] User profile is available. Using 'C:\Users\param\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-15 22:05:13.516 -04:00 [WRN] No store type was specified for the decimal property 'DailyRate' on entity type 'Car'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:05:13.517 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Flight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:05:13.896 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:13.934 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:13.936 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:13.977 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-15 22:05:14.047 -04:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2024-04-15 22:05:14.049 -04:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-04-15 22:05:22.862 -04:00 [INF] User profile is available. Using 'C:\Users\param\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-15 22:05:23.336 -04:00 [WRN] No store type was specified for the decimal property 'DailyRate' on entity type 'Car'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:05:23.337 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Flight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:05:23.723 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:23.762 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:23.763 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-04-15 22:05:23.809 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-15 22:05:23.871 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-15 22:05:23.872 -04:00 [INF] Hosting environment: Development
+2024-04-15 22:05:23.872 -04:00 [INF] Content root path: C:\T177 SEM 4\WEB APP DEV\GBCTravel105(2)\GBCTravel105
+2024-04-15 22:05:23.879 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/ - null null
+2024-04-15 22:05:23.949 -04:00 [INF] Executing endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:05:23.956 -04:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GBCTravel105.Controllers.HomeController (GBCTravel105).
+2024-04-15 22:05:23.960 -04:00 [INF] Executing ViewResult, running view Index.
+2024-04-15 22:05:24.018 -04:00 [INF] Executed ViewResult - view Index executed in 57.8243ms.
+2024-04-15 22:05:24.020 -04:00 [INF] Executed action GBCTravel105.Controllers.HomeController.Index (GBCTravel105) in 63.4708ms
+2024-04-15 22:05:24.020 -04:00 [INF] Executed endpoint 'GBCTravel105.Controllers.HomeController.Index (GBCTravel105)'
+2024-04-15 22:05:24.023 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/ - 200 null text/html; charset=utf-8 144.2616ms
+2024-04-15 22:05:24.038 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-15 22:05:24.039 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2024-04-15 22:05:24.040 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 1.9965ms
+2024-04-15 22:05:24.057 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7781ms
+2024-04-15 22:35:10.913 -04:00 [WRN] No store type was specified for the decimal property 'DailyRate' on entity type 'Car'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-15 22:35:10.934 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Flight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using GBCTravel105.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using GBCTravel105.Areas.BookingManagement.Models;
 
 namespace GBCTravel105.Data
 {
-    public class GBCTravel105Context : DbContext
+    public class GBCTravel105Context : IdentityDbContext<IdentityUser>
     {
         public GBCTravel105Context (DbContextOptions<GBCTravel105Context> options)
             : base(options)
@@ -15,11 +17,11 @@ namespace GBCTravel105.Data
 
         }
 
-        public DbSet<GBCTravel105.Models.Booking> Booking { get; set; } = default;
-        public DbSet<GBCTravel105.Models.Flight> Flight { get; set; }
-        public DbSet<GBCTravel105.Models.Car> Car { get; set; }
+        public DbSet<Booking> Booking { get; set; } = default;
+        public DbSet<Flight> Flight { get; set; }
+        public DbSet<Car> Car { get; set; }
 
-        public DbSet<GBCTravel105.Models.Hotel> Hotel { get; set; }
+        public DbSet<Hotel> Hotel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -17,12 +17,12 @@ namespace GBCTravel105.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("GBCTravel105.Models.Booking", b =>
+            modelBuilder.Entity("GBCTravel105.Areas.BookingManagement.Models.Booking", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -48,13 +48,13 @@ namespace GBCTravel105.Migrations
                         new
                         {
                             Id = 1,
-                            BookingDate = new DateOnly(2024, 2, 25),
+                            BookingDate = new DateOnly(2024, 4, 15),
                             bookingtype = "Car",
                             price = 20.0
                         });
                 });
 
-            modelBuilder.Entity("GBCTravel105.Models.Car", b =>
+            modelBuilder.Entity("GBCTravel105.Areas.BookingManagement.Models.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -312,7 +312,7 @@ namespace GBCTravel105.Migrations
                         });
                 });
 
-            modelBuilder.Entity("GBCTravel105.Models.Flight", b =>
+            modelBuilder.Entity("GBCTravel105.Areas.BookingManagement.Models.Flight", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -350,8 +350,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 1,
                             Airline = "AIR CANADA",
-                            ArrivalTime = new DateTime(2024, 2, 27, 0, 53, 33, 940, DateTimeKind.Local).AddTicks(6906),
-                            DepartureTime = new DateTime(2024, 2, 25, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6904),
+                            ArrivalTime = new DateTime(2024, 4, 16, 6, 57, 10, 757, DateTimeKind.Local).AddTicks(1192),
+                            DepartureTime = new DateTime(2024, 4, 15, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1189),
                             Destination = "YYZ",
                             Origin = "BOM",
                             Price = 600.00m
@@ -360,8 +360,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 6,
                             Airline = "AIR CANADA",
-                            ArrivalTime = new DateTime(2024, 2, 27, 0, 53, 33, 940, DateTimeKind.Local).AddTicks(6914),
-                            DepartureTime = new DateTime(2024, 2, 25, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6913),
+                            ArrivalTime = new DateTime(2024, 4, 16, 6, 57, 10, 757, DateTimeKind.Local).AddTicks(1201),
+                            DepartureTime = new DateTime(2024, 4, 15, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1200),
                             Destination = "YYZ",
                             Origin = "BOM",
                             Price = 500.00m
@@ -370,8 +370,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 2,
                             Airline = "Emirates",
-                            ArrivalTime = new DateTime(2024, 2, 27, 8, 53, 33, 940, DateTimeKind.Local).AddTicks(6920),
-                            DepartureTime = new DateTime(2024, 2, 26, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6917),
+                            ArrivalTime = new DateTime(2024, 4, 16, 14, 57, 10, 757, DateTimeKind.Local).AddTicks(1207),
+                            DepartureTime = new DateTime(2024, 4, 16, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1204),
                             Destination = "JFK",
                             Origin = "DXB",
                             Price = 800.00m
@@ -380,8 +380,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 3,
                             Airline = "British Airways",
-                            ArrivalTime = new DateTime(2024, 2, 28, 4, 53, 33, 940, DateTimeKind.Local).AddTicks(6924),
-                            DepartureTime = new DateTime(2024, 2, 27, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6922),
+                            ArrivalTime = new DateTime(2024, 4, 17, 10, 57, 10, 757, DateTimeKind.Local).AddTicks(1212),
+                            DepartureTime = new DateTime(2024, 4, 17, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1210),
                             Destination = "SFO",
                             Origin = "LHR",
                             Price = 700.00m
@@ -390,8 +390,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 4,
                             Airline = "Lufthansa",
-                            ArrivalTime = new DateTime(2024, 2, 29, 6, 53, 33, 940, DateTimeKind.Local).AddTicks(6927),
-                            DepartureTime = new DateTime(2024, 2, 28, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6926),
+                            ArrivalTime = new DateTime(2024, 4, 18, 12, 57, 10, 757, DateTimeKind.Local).AddTicks(1216),
+                            DepartureTime = new DateTime(2024, 4, 18, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1214),
                             Destination = "MIA",
                             Origin = "FRA",
                             Price = 600.00m
@@ -400,8 +400,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 5,
                             Airline = "Singapore Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 1, 10, 53, 33, 940, DateTimeKind.Local).AddTicks(6930),
-                            DepartureTime = new DateTime(2024, 2, 29, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6929),
+                            ArrivalTime = new DateTime(2024, 4, 19, 16, 57, 10, 757, DateTimeKind.Local).AddTicks(1220),
+                            DepartureTime = new DateTime(2024, 4, 19, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1218),
                             Destination = "LAX",
                             Origin = "SIN",
                             Price = 900.00m
@@ -410,8 +410,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 7,
                             Airline = "AIR CANADA",
-                            ArrivalTime = new DateTime(2024, 2, 27, 0, 53, 33, 940, DateTimeKind.Local).AddTicks(6934),
-                            DepartureTime = new DateTime(2024, 2, 25, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6933),
+                            ArrivalTime = new DateTime(2024, 4, 16, 6, 57, 10, 757, DateTimeKind.Local).AddTicks(1224),
+                            DepartureTime = new DateTime(2024, 4, 15, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1222),
                             Destination = "YYZ",
                             Origin = "BOM",
                             Price = 500.00m
@@ -420,8 +420,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 8,
                             Airline = "Emirates",
-                            ArrivalTime = new DateTime(2024, 2, 27, 8, 53, 33, 940, DateTimeKind.Local).AddTicks(6937),
-                            DepartureTime = new DateTime(2024, 2, 26, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6936),
+                            ArrivalTime = new DateTime(2024, 4, 16, 14, 57, 10, 757, DateTimeKind.Local).AddTicks(1228),
+                            DepartureTime = new DateTime(2024, 4, 16, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1227),
                             Destination = "JFK",
                             Origin = "DXB",
                             Price = 800.00m
@@ -430,8 +430,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 9,
                             Airline = "British Airways",
-                            ArrivalTime = new DateTime(2024, 2, 28, 4, 53, 33, 940, DateTimeKind.Local).AddTicks(6940),
-                            DepartureTime = new DateTime(2024, 2, 27, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6939),
+                            ArrivalTime = new DateTime(2024, 4, 17, 10, 57, 10, 757, DateTimeKind.Local).AddTicks(1232),
+                            DepartureTime = new DateTime(2024, 4, 17, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1231),
                             Destination = "SFO",
                             Origin = "LHR",
                             Price = 700.00m
@@ -440,8 +440,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 10,
                             Airline = "Lufthansa",
-                            ArrivalTime = new DateTime(2024, 2, 29, 6, 53, 33, 940, DateTimeKind.Local).AddTicks(6944),
-                            DepartureTime = new DateTime(2024, 2, 28, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6942),
+                            ArrivalTime = new DateTime(2024, 4, 18, 12, 57, 10, 757, DateTimeKind.Local).AddTicks(1236),
+                            DepartureTime = new DateTime(2024, 4, 18, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1235),
                             Destination = "MIA",
                             Origin = "FRA",
                             Price = 600.00m
@@ -450,8 +450,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 11,
                             Airline = "Singapore Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 1, 10, 53, 33, 940, DateTimeKind.Local).AddTicks(6947),
-                            DepartureTime = new DateTime(2024, 2, 29, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6945),
+                            ArrivalTime = new DateTime(2024, 4, 19, 16, 57, 10, 757, DateTimeKind.Local).AddTicks(1240),
+                            DepartureTime = new DateTime(2024, 4, 19, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1239),
                             Destination = "LAX",
                             Origin = "SIN",
                             Price = 900.00m
@@ -460,8 +460,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 12,
                             Airline = "AIR CANADA",
-                            ArrivalTime = new DateTime(2024, 2, 27, 0, 53, 33, 940, DateTimeKind.Local).AddTicks(6950),
-                            DepartureTime = new DateTime(2024, 2, 25, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6949),
+                            ArrivalTime = new DateTime(2024, 4, 16, 6, 57, 10, 757, DateTimeKind.Local).AddTicks(1244),
+                            DepartureTime = new DateTime(2024, 4, 15, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1243),
                             Destination = "YYZ",
                             Origin = "BOM",
                             Price = 500.00m
@@ -470,8 +470,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 13,
                             Airline = "Qatar Airways",
-                            ArrivalTime = new DateTime(2024, 3, 2, 6, 53, 33, 940, DateTimeKind.Local).AddTicks(6953),
-                            DepartureTime = new DateTime(2024, 3, 1, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6952),
+                            ArrivalTime = new DateTime(2024, 4, 20, 12, 57, 10, 757, DateTimeKind.Local).AddTicks(1248),
+                            DepartureTime = new DateTime(2024, 4, 20, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1247),
                             Destination = "ORD",
                             Origin = "DOH",
                             Price = 750.00m
@@ -480,8 +480,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 14,
                             Airline = "Cathay Pacific",
-                            ArrivalTime = new DateTime(2024, 3, 3, 7, 53, 33, 940, DateTimeKind.Local).AddTicks(6956),
-                            DepartureTime = new DateTime(2024, 3, 2, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6955),
+                            ArrivalTime = new DateTime(2024, 4, 21, 13, 57, 10, 757, DateTimeKind.Local).AddTicks(1253),
+                            DepartureTime = new DateTime(2024, 4, 21, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1251),
                             Destination = "LHR",
                             Origin = "HKG",
                             Price = 650.00m
@@ -490,8 +490,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 15,
                             Airline = "Delta Air Lines",
-                            ArrivalTime = new DateTime(2024, 3, 3, 20, 53, 33, 940, DateTimeKind.Local).AddTicks(6959),
-                            DepartureTime = new DateTime(2024, 3, 3, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6958),
+                            ArrivalTime = new DateTime(2024, 4, 22, 2, 57, 10, 757, DateTimeKind.Local).AddTicks(1257),
+                            DepartureTime = new DateTime(2024, 4, 22, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1256),
                             Destination = "LGA",
                             Origin = "ATL",
                             Price = 400.00m
@@ -500,8 +500,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 16,
                             Airline = "Virgin Atlantic",
-                            ArrivalTime = new DateTime(2024, 3, 5, 0, 53, 33, 940, DateTimeKind.Local).AddTicks(6963),
-                            DepartureTime = new DateTime(2024, 3, 4, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6961),
+                            ArrivalTime = new DateTime(2024, 4, 23, 6, 57, 10, 757, DateTimeKind.Local).AddTicks(1261),
+                            DepartureTime = new DateTime(2024, 4, 23, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1260),
                             Destination = "JFK",
                             Origin = "LAX",
                             Price = 550.00m
@@ -510,8 +510,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 17,
                             Airline = "United Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 5, 22, 53, 33, 940, DateTimeKind.Local).AddTicks(6967),
-                            DepartureTime = new DateTime(2024, 3, 5, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6965),
+                            ArrivalTime = new DateTime(2024, 4, 24, 4, 57, 10, 757, DateTimeKind.Local).AddTicks(1266),
+                            DepartureTime = new DateTime(2024, 4, 24, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1264),
                             Destination = "LAX",
                             Origin = "ORD",
                             Price = 450.00m
@@ -520,8 +520,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 18,
                             Airline = "KLM Royal Dutch Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 7, 2, 53, 33, 940, DateTimeKind.Local).AddTicks(6971),
-                            DepartureTime = new DateTime(2024, 3, 6, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6969),
+                            ArrivalTime = new DateTime(2024, 4, 25, 8, 57, 10, 757, DateTimeKind.Local).AddTicks(1270),
+                            DepartureTime = new DateTime(2024, 4, 25, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1268),
                             Destination = "JFK",
                             Origin = "AMS",
                             Price = 700.00m
@@ -530,8 +530,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 19,
                             Airline = "American Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 7, 22, 53, 33, 940, DateTimeKind.Local).AddTicks(6975),
-                            DepartureTime = new DateTime(2024, 3, 7, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6973),
+                            ArrivalTime = new DateTime(2024, 4, 26, 4, 57, 10, 757, DateTimeKind.Local).AddTicks(1274),
+                            DepartureTime = new DateTime(2024, 4, 26, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1272),
                             Destination = "SFO",
                             Origin = "DFW",
                             Price = 550.00m
@@ -540,8 +540,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 20,
                             Airline = "Air France",
-                            ArrivalTime = new DateTime(2024, 3, 9, 3, 53, 33, 940, DateTimeKind.Local).AddTicks(6978),
-                            DepartureTime = new DateTime(2024, 3, 8, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6977),
+                            ArrivalTime = new DateTime(2024, 4, 27, 9, 57, 10, 757, DateTimeKind.Local).AddTicks(1278),
+                            DepartureTime = new DateTime(2024, 4, 27, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1276),
                             Destination = "ATL",
                             Origin = "CDG",
                             Price = 800.00m
@@ -550,8 +550,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 21,
                             Airline = "Qantas",
-                            ArrivalTime = new DateTime(2024, 3, 10, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6981),
-                            DepartureTime = new DateTime(2024, 3, 9, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6980),
+                            ArrivalTime = new DateTime(2024, 4, 29, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1282),
+                            DepartureTime = new DateTime(2024, 4, 28, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1280),
                             Destination = "LHR",
                             Origin = "SYD",
                             Price = 1000.00m
@@ -560,8 +560,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 22,
                             Airline = "Turkish Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 11, 5, 53, 33, 940, DateTimeKind.Local).AddTicks(6984),
-                            DepartureTime = new DateTime(2024, 3, 10, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6983),
+                            ArrivalTime = new DateTime(2024, 4, 29, 11, 57, 10, 757, DateTimeKind.Local).AddTicks(1286),
+                            DepartureTime = new DateTime(2024, 4, 29, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1284),
                             Destination = "JFK",
                             Origin = "IST",
                             Price = 600.00m
@@ -570,8 +570,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 23,
                             Airline = "Japan Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 12, 4, 53, 33, 940, DateTimeKind.Local).AddTicks(6987),
-                            DepartureTime = new DateTime(2024, 3, 11, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6986),
+                            ArrivalTime = new DateTime(2024, 4, 30, 10, 57, 10, 757, DateTimeKind.Local).AddTicks(1290),
+                            DepartureTime = new DateTime(2024, 4, 30, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1289),
                             Destination = "LAX",
                             Origin = "NRT",
                             Price = 850.00m
@@ -580,8 +580,8 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 24,
                             Airline = "Alitalia",
-                            ArrivalTime = new DateTime(2024, 3, 13, 3, 53, 33, 940, DateTimeKind.Local).AddTicks(6991),
-                            DepartureTime = new DateTime(2024, 3, 12, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6989),
+                            ArrivalTime = new DateTime(2024, 5, 1, 9, 57, 10, 757, DateTimeKind.Local).AddTicks(1294),
+                            DepartureTime = new DateTime(2024, 5, 1, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1293),
                             Destination = "JFK",
                             Origin = "FCO",
                             Price = 750.00m
@@ -590,15 +590,15 @@ namespace GBCTravel105.Migrations
                         {
                             Id = 25,
                             Airline = "Southwest Airlines",
-                            ArrivalTime = new DateTime(2024, 3, 13, 19, 53, 33, 940, DateTimeKind.Local).AddTicks(6994),
-                            DepartureTime = new DateTime(2024, 3, 13, 18, 53, 33, 940, DateTimeKind.Local).AddTicks(6993),
+                            ArrivalTime = new DateTime(2024, 5, 2, 1, 57, 10, 757, DateTimeKind.Local).AddTicks(1298),
+                            DepartureTime = new DateTime(2024, 5, 2, 0, 57, 10, 757, DateTimeKind.Local).AddTicks(1297),
                             Destination = "LAX",
                             Origin = "LAS",
                             Price = 200.00m
                         });
                 });
 
-            modelBuilder.Entity("GBCTravel105.Models.Hotel", b =>
+            modelBuilder.Entity("GBCTravel105.Areas.BookingManagement.Models.Hotel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -839,6 +839,259 @@ namespace GBCTravel105.Migrations
                             RoomNumber = 0,
                             status = true
                         });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

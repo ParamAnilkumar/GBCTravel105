@@ -1,0 +1,37 @@
+﻿@model IEnumerable<GBCTravel105.Areas.BookingManagement.Models.Hotel>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/GBCTravel105.styles.css" asp-append-version="true" />
+
+@{
+    ViewData["Title"] = "Hotel Index";
+}
+
+<div class="container">
+    <h1>Explore Our Hotels</h1>
+
+    <div class="row">
+        @foreach (var hotel in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-md-6">
+                            <img src="@hotel.ImageUrl" class="img-fluid mb-4" alt="Hotel Image">
+                        </div>
+                        <h5 class="card-title">@hotel.RoomNumber - @hotel.Name</h5>
+                        <p class="card-text">Location: @hotel.Location</p>
+                        <p class="card-text">Rate: $@hotel.PricePerNight</p>
+                        <p class="card-text">Availability: @(hotel.status ? "Available" : "Not Available")</p>
+                        <a href="@Url.Action("hotelDetails", new { id = hotel.Id })" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (!Model.Any())
+    {
+        <p>No cars found.</p>
+    }
+</div>

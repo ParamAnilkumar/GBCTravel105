@@ -1,11 +1,16 @@
+using GBCTravel105.Areas.BookingManagement.Models;
 using GBCTravel105.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace GBCTravel105.Controllers
 {
+
+    [Authorize]
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -29,6 +34,8 @@ namespace GBCTravel105.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Admin()
         {
             return View();
@@ -39,6 +46,6 @@ namespace GBCTravel105.Controllers
             return View();
         }
 
-        
+
     }
 }

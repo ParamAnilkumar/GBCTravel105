@@ -2,7 +2,19 @@
   "dependencies": {
     "mssql1": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:GBCTravel105Context"
+      "connectionId": "ConnectionStrings:MyRemoteTravelDatabase"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:GBCTravel105Context",
+      "dynamicId": null
+    },
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:aspFinalConnectionString"
     }
   }
 }

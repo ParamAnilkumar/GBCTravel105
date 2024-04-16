@@ -1,0 +1,68 @@
+﻿@model GBCTravel105.Areas.BookingManagement.Models.Flight
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/GBCTravel105.styles.css" asp-append-version="true" />
+
+<h1>Confirm Booking</h1>
+
+@if (ViewData.ContainsKey("BookingId") && ViewData["Flight"] != null)
+{
+    var car = ViewData["Flight"] as GBCTravel105.Areas.BookingManagement.Models.Flight;
+    <div>
+        <p>Your booking with ID: <strong>@ViewData["BookingId"]</strong> has been confirmed.</p>
+        <h3>Flight Booking Details:</h3>
+        <dl class="row">
+            <dt class="col-sm-2">
+                Airline
+            </dt>
+            <dd class="col-sm-10">
+                @car.Airline
+            </dd>
+            <dt class="col-sm-2">
+                Origin
+            </dt>
+            <dd class="col-sm-10">
+                @car.Origin
+            </dd>
+            <dt class="col-sm-2">
+                Destination
+            </dt>
+            <dd class="col-sm-10">
+                @car.Destination
+            </dd>
+            <dt class="col-sm-2">
+                DepartureTime
+            </dt>
+            <dd class="col-sm-10">
+                @car.DepartureTime
+            </dd>
+            <dt class="col-sm-2">
+                ArrivalTime
+            </dt>
+            <dd class="col-sm-10">
+                @car.ArrivalTime
+            </dd>
+            <dt class="col-sm-2">
+                Price
+            </dt>
+            <dd class="col-sm-10">
+                @car.Price
+            </dd>
+        </dl>
+    </div>
+}
+else
+{
+    <div>
+        <p>Booking confirmation details not found.</p>
+    </div>
+}
+
+<div>
+    <a class="btn btn-primary" asp-controller="userView" asp-action="viewFlights">Back to Car Rentals</a>
+    <a class="btn btn-primary" asp-controller="Bookings" asp-action="Index">View your Bookings</a>
+</div>

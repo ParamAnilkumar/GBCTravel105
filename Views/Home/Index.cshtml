@@ -1,5 +1,18 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManage
+
+@{
     ViewData["Title"] = "Home Page";
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <h1>Hello Admin!</h1>
+}
+else
+{
+    <h1>Welcome User!</h1>
 }
 
 <div class="container">
@@ -14,7 +27,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Hotels</h5>
                     <p class="card-text">Find the perfect accommodation for your trip.</p>
-                    <a href="@Url.Action("viewHotels", "userView")" class="btn btn-primary">View Hotels</a>
+@*                     <a href="@Url.Action("viewHotels", "userView")" class="btn btn-primary">View Hotels</a>
+ *@                    <a asp-area="BookingManagement" asp-controller="userView" asp-action="viewHotels" class="btn btn-primary">View Hotels</a>
+
                 </div>
             </div>
         </div>
@@ -23,7 +38,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Flights</h5>
                     <p class="card-text">Discover great deals on flights to your dream destinations.</p>
-                    <a href="@Url.Action("viewFlights", "userView")" class="btn btn-primary">View Flights</a>
+                    @* <a href="@Url.Action("viewFlights", "userView")" class="btn btn-primary">View Flights</a> *@
+                    <a asp-area="BookingManagement" asp-controller="userView" asp-action="viewFlights" class="btn btn-primary">View Flights</a>
                 </div>
             </div>
         </div>
@@ -32,7 +48,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Car rental</h5>
                     <p class="card-text">Manage your bookings and travel itinerary.</p>
-                    <a href="@Url.Action("viewCars", "userView")" class="btn btn-primary">View Cars</a>
+                   @*  <a href="@Url.Action("viewCars", "userView")" class="btn btn-primary">View Cars</a> *@
+                    <a asp-area="BookingManagement" asp-controller="userView" asp-action="viewCars" class="btn btn-primary">View Cars</a>
                 </div>
             </div>
         </div>
